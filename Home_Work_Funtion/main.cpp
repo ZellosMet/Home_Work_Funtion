@@ -5,7 +5,7 @@ using namespace std;
 //#define POWER
 
 int Factorial(int iterat);
-double Power(double base, double degree);
+double Power(int base, int degree);
 
 void main()
 {
@@ -37,7 +37,7 @@ int Factorial(int iterat)
 	return iterat * Factorial(iterat - 1);
 }
 
-double Power(double base, double degree)
+double Power(int base, int degree)
 {
 	double result = base;
 	for (int i = degree < 0 ? degree * (-1) : degree; i > 1; i--)
