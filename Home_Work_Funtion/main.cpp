@@ -5,11 +5,11 @@ using namespace std;
 //#define POWER
 
 int Factorial(int iterat);
-double Power(int base, int degree);
+double Power(double base, int degree);
 
 void main()
 {
-	int a, b;
+	double a, b;
 	setlocale(LC_ALL, "ru");
 
 #ifdef FACTORIAL
@@ -37,7 +37,7 @@ int Factorial(int iterat)
 	return iterat * Factorial(iterat - 1);
 }
 
-double Power(int base, int degree)
+double Power(double base, int degree)
 {
 	double result = base;
 	for (int i = degree < 0 ? degree * (-1) : degree; i > 1; i--)
